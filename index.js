@@ -20,7 +20,8 @@ app.use(cors());
 app.use(express.json());
 
 //crear rutas
-
+const rutaContador = require('./rutas/contador');
+app.use('/api/contador', rutaContador);
 //escuchar peticiones
 app.listen(process.env.PORT, () => {
     console.log('Servidor corriendo en puerto ' + process.env.PORT);
