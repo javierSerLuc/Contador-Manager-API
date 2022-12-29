@@ -1,4 +1,4 @@
-const {conexion} = require('../basedatos/conexion');
+const {conexion} = require('./basedatos/conexion');
 const dotenv = require('dotenv');
 const express = require('express');
 const cors = require('cors');
@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //crear rutas
-const rutaContador = require('../rutas/contador');
+const rutaContador = require('./rutas/contador');
 app.use('/api/contador', rutaContador);
 //escuchar peticiones
 app.listen(process.env.PORT, () => {
