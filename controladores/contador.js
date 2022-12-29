@@ -1,4 +1,4 @@
-const Contador = require("../modelos/contador");
+const Contador = require("../modelos/Contador");
 
 
 const prueba = (req, res) => {
