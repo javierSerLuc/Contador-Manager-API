@@ -21,5 +21,5 @@ const ContadorSchema = Schema({
 
 });
 
-module.exports = model('Contador', ContadorSchema);
+module.exports = model('Contador', ContadorSchema, 'contadores');
 
