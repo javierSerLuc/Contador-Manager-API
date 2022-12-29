@@ -18,6 +18,7 @@ app.use(cors());
 
 //Convertir body a json
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 //crear rutas
 const rutaContador = require('./rutas/contador');
